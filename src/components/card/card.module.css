@@ -1,0 +1,35 @@
+.card {
+  width: 100%;
+  display: flex;
+  border-radius: 16px;
+  margin: 120px auto;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.card-sm {
+  width: 300px;
+  min-height: 200px;
+}
+
+.card-md {
+  width: 700px;
+  min-height: 300px;
+}
+
+.card-lg {
+  width: 700px;
+  min-height: 400px;
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    margin: 20px auto;
+  }
+
+  .card-sm,
+  .card-md,
+  .card-lg {
+    width: 100%;
+  }
+}
