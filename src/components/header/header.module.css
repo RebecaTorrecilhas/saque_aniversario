@@ -1,0 +1,35 @@
+.headerContainer {
+  display: flex;
+  width: 700px;
+  margin: auto;
+  padding: 48px 0px 16px 0px;
+  align-items: center;
+}
+
+.headerSvg {
+  height: 30px;
+  width: 30px;
+  filter: invert(1);
+  padding-right: 10px;
+}
+
+.headerContainer p {
+  color: white;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 768px) {
+  .headerContainer {
+    background: white;
+    padding: 24px 16px 16px;
+  }
+
+  .headerSvg {
+    filter: invert(0);
+  }
+
+  .headerContainer p {
+    color: black;
+  }
+}
