@@ -1,0 +1,29 @@
+.cacheTextContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.valueText,
+.titleText {
+  color: var(--text-blue);
+}
+
+.realText {
+  color: var(--text-gray);
+}
+
+.valueText {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.titleText,
+.realText {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.centText {
+  font-size: 25px;
+  font-weight: 600;
+}
