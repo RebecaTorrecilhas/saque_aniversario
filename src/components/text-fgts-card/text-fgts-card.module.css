@@ -1,0 +1,88 @@
+.cardTextContainer {
+  display: flex;
+  align-items: flex-end;
+}
+
+.titleContainer {
+  width: 400px;
+  min-width: 400px;
+  word-wrap: break-word;
+}
+
+.titleContainer h1 {
+  color: white;
+  font-size: 45px;
+  font-weight: 700;
+  font-style: italic;
+  line-height: 45px;
+}
+
+.svg {
+  height: 30px;
+  width: 30px;
+}
+
+.subtitle {
+  display: flex;
+  align-items: center;
+
+  h2 {
+    font-size: 16px;
+    margin-left: 16px;
+  }
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+
+  h2,
+  p {
+    color: white;
+  }
+}
+
+.text {
+  display: flex;
+  align-items: flex-end;
+}
+
+.text p {
+  margin-left: 16px;
+  font-size: 14px;
+}
+
+.text div {
+  margin: 0px 16px;
+  width: 3px;
+  height: 30px;
+  background-color: #1d5f8b;
+  border: none;
+}
+
+.pt10px {
+  padding-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .cardTextContainer {
+    padding: 40px 0px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .titleContainer {
+    width: 90%;
+    word-wrap: normal;
+    margin-bottom: 24px;
+  }
+
+  .titleContainer h1 {
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .textContainer {
+    width: 300px;
+  }
+}
