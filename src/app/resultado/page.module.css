@@ -1,0 +1,41 @@
+.page {
+  position: relative;
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.cashContent,
+.textContent {
+  padding: 15px;
+}
+
+.textContent {
+  width: 50%;
+}
+
+.textContent p {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-gray);
+}
+
+.highlight {
+  color: var(--text-blue);
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .textContent {
+    width: 100%;
+    padding: 20px 50px;
+  }
+}
