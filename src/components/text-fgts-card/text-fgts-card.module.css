@@ -25,21 +25,21 @@
 .subtitle {
   display: flex;
   align-items: center;
+}
 
-  h2 {
-    font-size: 16px;
-    margin-left: 16px;
-  }
+.subtitle h2 {
+  font-size: 16px;
+  margin-left: 16px;
 }
 
 .textContainer {
   display: flex;
   flex-direction: column;
+}
 
-  h2,
-  p {
-    color: white;
-  }
+.textContainer h2,
+.textContainer p {
+  color: white;
 }
 
 .text {

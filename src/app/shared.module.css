@@ -1,0 +1,19 @@
+.error-text {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  border-radius: 5px;
+  width: 100%;
+  background-color: rgba(var(--danger-rgb), 0.1);
+}
+
+.error-text img {
+  margin-right: 12px;
+}
+
+.error-text p {
+  filter: brightness(0.5);
+  color: var(--danger);
+  font-weight: 700;
+  font-size: 13px;
+}
