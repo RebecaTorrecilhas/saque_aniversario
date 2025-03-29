@@ -1,6 +1,8 @@
 'use client';
 
 import styles from "./input-text.module.css";
+import sharedStyles from "../../app/shared.module.css";
+import Image from "next/image";
 import { InputTextProps } from "./input-text.type";
 
 export default function InputText(props: InputTextProps) {
@@ -22,8 +24,8 @@ export default function InputText(props: InputTextProps) {
             />
 
             {props.hasError &&
-                <div className="error-text">
-                    <img src="./images/error.png" alt="" />
+                <div className={sharedStyles['error-text']}>
+                    <Image src="/images/error.png" width={24} height={24} alt="" />
                     <p>{props.errorText}</p>
                 </div>
             }

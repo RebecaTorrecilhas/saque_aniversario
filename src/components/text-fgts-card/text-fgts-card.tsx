@@ -1,5 +1,6 @@
 import styles from "./text-fgts-card.module.css";
 import { TextCardProps } from "./text-fgts-card.type";
+import Image from "next/image";
 
 export default function TextFgtsCard(props: TextCardProps) {
     return (
@@ -9,7 +10,7 @@ export default function TextFgtsCard(props: TextCardProps) {
             </div>
             <div className={styles.textContainer}>
                 <div className={styles.subtitle}>
-                    <img src="./money.svg" alt="" className={styles.svg} />
+                    <Image src="./money.svg" width={30} height={30} alt="" className={styles.svg} />
                     <h2> SAQUE ANIVERSÁRIO </h2>
                 </div>
                 <div className={styles.text}>

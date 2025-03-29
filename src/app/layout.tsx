@@ -1,9 +1,12 @@
+import "./globals.css";
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
-import "./globals.css";
+import App from "./app";
+import Image from "next/image";
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
+  subsets: ["latin"],
   adjustFontFallback: false,
   weight: ['400', '500', '600', '700', '900']
 });
@@ -21,9 +24,11 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body className={`${montserrat.variable}`}>
-        <img className="background-image" src="/images/hero.webp" alt="" />
+        <Image className="background-image" width={2048} height={1365} src="/images/hero.webp" alt="" />
         <div className="background-layer"></div>
-        {children}
+        <App>
+          {children}
+        </App>
       </body>
     </html>
   );
