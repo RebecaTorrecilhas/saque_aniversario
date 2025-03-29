@@ -1,4 +1,4 @@
-export type CacheTextProps = {
+export type CashTextProps = {
     title: string,
     value: number
 }

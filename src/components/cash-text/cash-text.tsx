@@ -1,18 +1,20 @@
-import { formattCurrencyValue, splitCurrencyValue } from "@/utils/utils";
-import styles from "./cache-text.module.css";
-import { CacheTextProps } from "./cache-text.type";
+import styles from "./cash-text.module.css";
+import { calcFGTS, formattCurrencyValue, splitCurrencyValue } from "@/utils/utils";
+import { CashTextProps } from "./cashtext.type";
 
-export default function CacheText(props: CacheTextProps) {
+export default function CashText(props: CashTextProps) {
     const valuesSplit = splitCurrencyValue(
-        formattCurrencyValue(props.value)
+        formattCurrencyValue(
+            calcFGTS(props.value)
+        )
     );
 
     return (
-        <div className={styles.cacheTextContainer}>
+        <div className={styles.cashTextContainer}>
             <b className={styles.titleText}> {props.title} </b>
             <p>
                 <span className={styles.realText}>
-                    R$
+                    R$&nbsp;
                 </span>
                 <b className={styles.valueText}>
                     {valuesSplit[0]},
