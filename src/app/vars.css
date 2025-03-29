@@ -4,6 +4,7 @@
   --primary: #0050fc;
   --secondary: #fbbc04;
   --danger: #ff0000;
+  --danger-rgb: 255, 0, 0;
   --text-blue: #218496;
   --text-gray: #686868;
 }
