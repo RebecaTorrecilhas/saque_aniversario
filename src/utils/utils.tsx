@@ -85,6 +85,13 @@ export const clearNumber = (value: string): number => {
     return parseFloat(value);
 };
 
+/**
+ * Essa função recebe um valor numérico e retorna como resultado
+ * o cálculo do valor disponível para saque do FGTS com base nas regras.
+ * @param value valor numérico referente ao saldo
+ * @returns valor numérico refrente ao valor disponível para saque
+ **/
+
 export function calcFGTS(value: number): number {
     if (value <= 500) {
         return value * 0.5;
