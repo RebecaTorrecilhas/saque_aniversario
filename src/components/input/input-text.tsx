@@ -11,6 +11,7 @@ export default function InputText(props: InputTextProps) {
             </label>
             <input
                 id={props.id}
+                name={props.name}
                 type="text"
                 maxLength={props.maxlength}
                 placeholder={props.placeholder}

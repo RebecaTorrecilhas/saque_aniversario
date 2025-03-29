@@ -11,6 +11,7 @@ export default function InputSelect(props: InputSelectProps) {
             </label>
             <select
                 id={props.id}
+                name={props.name}
                 value={props.value}
                 onChange={props.onChange}
                 className={styles.inputSelect}
